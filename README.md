@@ -1,5 +1,5 @@
 ## THIS IS NOT *THE* [REALM BOT](https://realmbot.dev)
-This is a open source bot that is very similar to it but is not it. All realm bots are similar and I am in no way trying to take away from [Realm Bot](https://realmbot.dev). I am just trying to give the public a open source and free realm bot.
+This is a open source bot that is very similar to it but is not it. All realm bots are similar and I am in no way trying to take away from [Realm Bot](https://realmbot.dev). I am just trying to give the public a open source and free realm bot. I am saying this because this is named realm bot and there is a realm bot called "Realm Bot". I might remove this cause I kinda feel dumb for putting this here but it's just in-case people are confused.
 
 # LavishMC Realm-Bot
 A Discord &amp; Minecraft Bot that gives many features to players and Minecraft realm owners that help Protect, Moderate, and Control their realms. 
@@ -19,7 +19,7 @@ Anything with a 🔴 is not currently implimented
   > Banning
   > Kicking
   > Inviting
-  > Permisions
+  > Permisionslm
 🔴| Realm info from discord
   > Online Players
   > Recent Players
@@ -35,3 +35,4 @@ Anything with a 🔴 is not currently implimented
   > Realm map?
   >
 ```
+
