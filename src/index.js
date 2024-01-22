@@ -13,16 +13,17 @@ const { RealmAPI } = require('prismarine-realms');
 //         pickRealm: (realms) => realms.find(e => e.name.includes('5FS')) // Connect the client to a Realm using a function that returns a Realm
 //     }
 // })
-
-const authflow = new Authflow()
+const authflow = new Authflow('MisledWater79')
 const api = RealmAPI.from(authflow, 'bedrock')
 
-// Returns a list of Realms the authenticating account has joined or owns.
-await api.getRealmWorldDownload('rYxeADNoE6s','0').then((val )=>{console.log(JSON.stringify(val))})
+//const realms = await api.getRealms();
+//const [latestBackup] = await realms[1].getBackups();
+//latestBackup.getDownload().then(t => t.writeToDirectory('t'));
 
-const xboxAuth = await authenticate(process.env.EMAIL, process.env.PASWORD);
 const client = new Client({ intents: [ GatewayIntentBits.Guilds ]});
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
+
+client.api = api;
 
 registerCommands(client, rest);
 

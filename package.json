@@ -10,6 +10,7 @@
     "author": "MisledWater79",
     "license": "ISC",
     "dependencies": {
+        "@xboxreplay/xboxlive-api": "^3.4.3",
         "@xboxreplay/xboxlive-auth": "^4.0.0",
         "discord.js": "^14.7.1",
         "dotenv": "^16.0.3"

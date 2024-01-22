@@ -1,6 +1,8 @@
 const { Events, Routes } = require('discord.js');
 
 // REALM MODERATION
+//const addRealm = require('./realm-mod/add-realm');
+const realms = require('./realm-mod/realms');
 
 // DISCORD MODERATION
 
@@ -13,11 +15,15 @@ module.exports = {
         const commands = [
             ping,
             purge,
+            //addRealm,
+            realms,
         ];
 
         const commandData = [
             ping.data,
             purge.data,
+            //addRealm.data,
+            realms.data,
         ];
 
         try {
@@ -34,7 +40,7 @@ module.exports = {
             if (!interaction.isChatInputCommand()) return;
 
             const command = commands.find((command)=>command.data.name == interaction.commandName);
-            command.execute(interaction);
+            command.execute(interaction, client);
         });
     }
 };
